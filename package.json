@@ -20,7 +20,11 @@
     "lint-staged": "lint-staged",
     "prepare": "husky",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "playwright:test": "playwright test",
+    "playwright:headed": "playwright test --headed",
+    "playwright:ui": "playwright test --ui",
+    "playwright:report": "playwright show-report"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -28,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
+    "@playwright/test": "^1.55.1",
     "@swc/jest": "^0.2.36",
     "@testing-library/jest-dom": "^6.4.1",
     "@testing-library/react": "^16.0.0",
