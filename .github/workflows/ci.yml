@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, unprotected-branch-ci-test]
   pull_request:
 
 permissions:
